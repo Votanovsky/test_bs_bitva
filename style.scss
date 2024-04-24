@@ -143,31 +143,39 @@ h1, h2 {
         }
     }
     .section_promo {
-        padding: 3.5vw 3.5vw 0 3.5vw;
+        padding: 3.5vw 6rem 0 3.5vw;
         width: 100%;
         height: auto;
         margin-bottom: 10rem;
         position: relative;
+        
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE/Edge */
+        user-select: none;
         @media  (max-width: $breakpoint-md-min) {
             padding: 3.5vw 0;
         }
         .promo_wr_img {
             width: 100%;
-            height: auto;
+            height: 100vh;
             // overflow: hidden;
-            background: #000;
-            background: linear-gradient(180deg, #f60c51 0%, #320311 88%);
             overflow: hidden;
             border-radius: 30px;
-            .img_parralax {
+            position: relative;
+            background: #EBF9FF;
+            background: url('media/b_l_1.png') 50% 50% no-repeat;
+            background-size: cover;
+            // Пока на теста
+            .img_parallax {
                 position: relative;
                 width: 100%;
                 height: 100vh;
                 
                 .img_desctop {
                     position: absolute;
-                    top: 0;
-                    left: 0;
+                    top: 0%;
+                    left: 0%;
                     display: block;
                     width: 100%;
                     height: 100%;
@@ -175,11 +183,44 @@ h1, h2 {
                     @media  (max-width: $breakpoint-md-min) {
                         // display: none;
                     }
-                }
-                &--1  {
-                    
+
+                    &--5  {
+                        top: 0%;
+                        left: 0%;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 4;
+                    }
                 }
             }
+            // .img_no_parallax {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     z-index: 2;
+            //     width: 100%;
+            //     height: 100%;
+            //     .imgs_relative {
+            //         position: relative;
+            //         width: 100%;
+            //         height: 100%;
+            //         .img_desctop {
+            //             position: absolute;
+            //             left: 0;
+            //             top: 0;
+            //             display: block;
+            //             width: 105%;
+            //             height: 105%;
+            //             transform: translate(-2%,-2%);
+            //             object-fit: contain;
+            //             @media  (max-width: $breakpoint-md-min) {
+            //                 // display: none;
+            //             }
+            //         }
+            //     }
+            // }
+            // Пока на теста
+
 
             .name {
                 position: absolute;
@@ -218,6 +259,143 @@ h1, h2 {
             color: $color-black;
             text-transform: uppercase;
             line-height: 110%;
+        }
+    }
+    
+    .section_about {
+        padding: 6rem;
+        &-content {
+            background: #EBF9FF;
+            border-radius: 3rem;
+            padding: 7rem 4.5rem 8rem;
+            display: flex;
+            flex-direction: column;
+            .text_wr {
+                display: flex;
+                margin-bottom: 11rem;
+                position: relative;
+                .h2_title {
+                    padding: 0;
+                    font-family: 'Dinpro_bold';
+                    font-size: 22.5rem;
+                    color: $color-pink;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    margin-right: 28rem;
+                    text-align: left;
+                    width: 76rem;
+                }
+                .subt {
+                    font-family: 'Dinpro_bold';
+                    font-size: 7rem;
+                    color: $color-black;
+                    line-height: 106%;
+                    text-transform: uppercase;
+                    padding-top: 3rem;
+                    text-align: left;
+                    width: 60rem;
+                    height: fit-content;
+                }
+
+                .money {
+                    display: block;
+                    object-fit: contain;
+                    position: absolute;
+                    &-bag {
+                        width: 36.5rem;
+                        height: auto;
+                        left: 50%;
+                        transform: translateX(-52%);
+                        bottom: -5rem;
+                    }
+                    &-arrow {
+                        width: 27rem;
+                        bottom: 1rem;
+                        right: 39rem;
+                    }
+                }
+            }
+            .adv {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-it {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    .live {
+                        position: absolute;
+                        left: 4rem;
+                        top: -2.5rem;
+                        // width: 14rem;
+                        padding: 1.4rem 2.7rem 1.3rem 1.7rem;
+                        height: 5rem;
+                        border-radius: 6rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $color-pink;
+                        .circle {
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-radius: 100%;
+                            background: $color-white;
+                            margin-right: 1rem;
+                            // margin-top: .3rem;
+                        }
+                        span {
+                            font-family: 'Dinpro_bold';
+                            font-size: 4rem;
+                            color: $color-white;
+                            line-height: 100%;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .img {
+                        display: block;
+                        width: 8rem;
+                        height: 8rem;
+                        object-fit: contain;
+                        margin-bottom: 2.5rem;
+                    }
+                    .title {
+                        font-family: 'Dinpro_bold';
+                        font-size: 4rem;
+                        color: $color-black;
+                        line-height: 106%;
+                        text-transform: uppercase;
+                        margin-bottom: 3rem;
+                    }
+                    .descr {
+                        @include PFDin_regular();
+                        font-size: 2rem;
+                        color: $color-black;
+                    }
+
+                    &:last-child {
+                        margin-top: 10.5rem;
+                        background: $color-white;
+                        border-radius: 3rem;
+                        padding: 2.5rem 3.5rem 6rem 4rem;
+
+                        .title {
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            position: relative;
+                            .date {
+                                // position: absolute;
+                                // right: -1rem;
+                                // top: -10rem;
+                                font-size: 6.5rem;
+                                color: $color-pink;
+                                line-height: 105%;
+                                margin-left: 10rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -83,11 +83,14 @@ h1, h2 {
   }
 }
 .bitva_main .section_promo {
-  padding: 3.5vw 3.5vw 0 3.5vw;
+  padding: 3.5vw 6rem 0 3.5vw;
   width: 100%;
   height: auto;
   margin-bottom: 10rem;
   position: relative;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */ /* IE/Edge */
+  user-select: none;
 }
 @media (max-width: 768px) {
   .bitva_main .section_promo {
@@ -96,26 +99,35 @@ h1, h2 {
 }
 .bitva_main .section_promo .promo_wr_img {
   width: 100%;
-  height: auto;
-  background: #000;
-  background: linear-gradient(180deg, #f60c51 0%, #320311 88%);
+  height: 100vh;
   overflow: hidden;
   border-radius: 30px;
+  position: relative;
+  background: #EBF9FF;
+  background: url("media/b_l_1.png") 50% 50% no-repeat;
+  background-size: cover;
 }
-.bitva_main .section_promo .promo_wr_img .img_parralax {
+.bitva_main .section_promo .promo_wr_img .img_parallax {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.bitva_main .section_promo .promo_wr_img .img_parralax .img_desctop {
+.bitva_main .section_promo .promo_wr_img .img_parallax .img_desctop {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.bitva_main .section_promo .promo_wr_img .img_parallax .img_desctop--5 {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
 }
 .bitva_main .section_promo .promo_wr_img .name {
   position: absolute;
@@ -153,6 +165,140 @@ h1, h2 {
   color: #000;
   text-transform: uppercase;
   line-height: 110%;
+}
+.bitva_main .section_about {
+  padding: 6rem;
+}
+.bitva_main .section_about-content {
+  background: #EBF9FF;
+  border-radius: 3rem;
+  padding: 7rem 4.5rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.bitva_main .section_about-content .text_wr {
+  display: flex;
+  margin-bottom: 11rem;
+  position: relative;
+}
+.bitva_main .section_about-content .text_wr .h2_title {
+  padding: 0;
+  font-family: "Dinpro_bold";
+  font-size: 22.5rem;
+  color: #F60C51;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-right: 28rem;
+  text-align: left;
+  width: 76rem;
+}
+.bitva_main .section_about-content .text_wr .subt {
+  font-family: "Dinpro_bold";
+  font-size: 7rem;
+  color: #000;
+  line-height: 106%;
+  text-transform: uppercase;
+  padding-top: 3rem;
+  text-align: left;
+  width: 60rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.bitva_main .section_about-content .text_wr .money {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+.bitva_main .section_about-content .text_wr .money-bag {
+  width: 36.5rem;
+  height: auto;
+  left: 50%;
+  transform: translateX(-52%);
+  bottom: -5rem;
+}
+.bitva_main .section_about-content .text_wr .money-arrow {
+  width: 27rem;
+  bottom: 1rem;
+  right: 39rem;
+}
+.bitva_main .section_about-content .adv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bitva_main .section_about-content .adv-it {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.bitva_main .section_about-content .adv-it .live {
+  position: absolute;
+  left: 4rem;
+  top: -2.5rem;
+  padding: 1.4rem 2.7rem 1.3rem 1.7rem;
+  height: 5rem;
+  border-radius: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F60C51;
+}
+.bitva_main .section_about-content .adv-it .live .circle {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 100%;
+  background: #fff;
+  margin-right: 1rem;
+}
+.bitva_main .section_about-content .adv-it .live span {
+  font-family: "Dinpro_bold";
+  font-size: 4rem;
+  color: #fff;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.bitva_main .section_about-content .adv-it .img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 2.5rem;
+}
+.bitva_main .section_about-content .adv-it .title {
+  font-family: "Dinpro_bold";
+  font-size: 4rem;
+  color: #000;
+  line-height: 106%;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.bitva_main .section_about-content .adv-it .descr {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  color: #000;
+}
+.bitva_main .section_about-content .adv-it:last-child {
+  margin-top: 10.5rem;
+  background: #fff;
+  border-radius: 3rem;
+  padding: 2.5rem 3.5rem 6rem 4rem;
+}
+.bitva_main .section_about-content .adv-it:last-child .title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+.bitva_main .section_about-content .adv-it:last-child .title .date {
+  font-size: 6.5rem;
+  color: #F60C51;
+  line-height: 105%;
+  margin-left: 10rem;
 }
 .bitva_main .section_stages {
   margin-bottom: 17rem;

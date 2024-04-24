@@ -4,6 +4,9 @@ console.log(Atropos);
 
 const myAtropos = Atropos({
     el: '.my-atropos',
+    duration: 300,
+    activeOffset: 50,
+    rotateXMax: 0.5,
     // rest of parameters
 });
 
