@@ -1,0 +1,1776 @@
+@font-face {
+  font-family: "Dinpro_medium";
+  src: local("Dinpro_medium"), url("fonts/dinpro_condensedmedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Dinpro_regular";
+  src: local("Dinpro_regular"), url("fonts/dinpro_condensedregular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Dinpro_black";
+  src: local("Dinpro_black"), url("fonts/dinpro_condensedblack.otf") format("opentype");
+}
+@font-face {
+  font-family: "Dinpro_bold";
+  src: local("Dinpro_bold"), url("fonts/dinpro_condensedbold.otf") format("opentype");
+}
+@font-face {
+  font-family: "PFDin_regular";
+  src: local("PFDin_regular"), url("fonts/PFDinDisplayPro-Reg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "firenight_regular";
+  src: local("firenight_regular"), url("fonts/firenight_regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Open_Sans";
+  src: local("Open_Sans"), url("fonts/OpenSans-Regular.ttf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 0.5208333333vw;
+}
+
+body {
+  font-family: PFDin_regular, Tahoma, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+::-moz-selection {
+  background-color: #F60C51;
+  color: #fff;
+}
+
+::selection {
+  background-color: #F60C51;
+  color: #fff;
+}
+
+.bitva_main .h2_title {
+  font-family: "Dinpro_bold";
+  font-size: 6.5rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 110%;
+}
+@media (max-width: 768px) {
+  .bitva_main .h2_title {
+    font-size: 35px;
+  }
+}
+.bitva_main .section_promo {
+  padding: 3.5vw 3.5vw 0 3.5vw;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10rem;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_promo {
+    padding: 3.5vw 0;
+  }
+}
+.bitva_main .section_promo .promo_wr_img {
+  width: 100%;
+  height: auto;
+  background: #000;
+  background: linear-gradient(180deg, #f60c51 0%, #320311 88%);
+  overflow: hidden;
+  border-radius: 30px;
+}
+.bitva_main .section_promo .promo_wr_img .img_parralax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.bitva_main .section_promo .promo_wr_img .img_parralax .img_desctop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_promo .promo_wr_img .img_parralax .img_desctop {
+    display: none;
+  }
+}
+.bitva_main .section_promo .promo_wr_img .name {
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  left: 200px;
+  top: 500px;
+}
+.bitva_main .section_promo .promo_wr_img .img_mob {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: none;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_promo .promo_wr_img .img_mob {
+    display: block;
+  }
+}
+.bitva_main .section_promo .step_name {
+  background: #fff;
+  padding: 1rem 10rem;
+  border-radius: 6rem;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  position: absolute;
+  font-family: "Dinpro_medium";
+  font-size: 6.5rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 110%;
+}
+.bitva_main .section_stages {
+  margin-bottom: 17rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+}
+.bitva_main .section_stages .h2_title {
+  margin-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .h2_title {
+    margin-bottom: 35px;
+  }
+}
+.bitva_main .section_stages .stages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bitva_main .section_stages .stages-it {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 20rem;
+}
+.bitva_main .section_stages .stages-it:last-child {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it {
+    background: #F60C51;
+    padding: 22px 22px 25px;
+    width: 100%;
+    border-radius: 30px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.bitva_main .section_stages .stages-it .on_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .on_row {
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
+.bitva_main .section_stages .stages-it .on_row .img_circle {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 100%;
+  background-color: #F60C51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.bitva_main .section_stages .stages-it .on_row .img_circle svg, .bitva_main .section_stages .stages-it .on_row .img_circle img {
+  width: 6rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .on_row .img_circle svg, .bitva_main .section_stages .stages-it .on_row .img_circle img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .on_row .img_circle {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+}
+.bitva_main .section_stages .stages-it .on_row .title {
+  font-family: "Dinpro_medium";
+  font-size: 4rem;
+  line-height: 110%;
+  margin-bottom: 3rem;
+  color: #000;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .on_row .title {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 26px;
+  }
+}
+.bitva_main .section_stages .stages-it .date {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .date {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+.bitva_main .section_stages .stages-it .descr {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  color: #000;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_stages .stages-it .descr {
+    margin-left: 0;
+    color: #fff;
+    font-size: 20px;
+    max-width: 100%;
+  }
+}
+.bitva_main .section_gifts {
+  margin-bottom: 22rem;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_gifts {
+    margin-bottom: 60px;
+  }
+}
+.bitva_main .section_gifts .h2_title {
+  margin-bottom: 12rem;
+  color: #F60C51;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_gifts .h2_title {
+    margin-bottom: 30px;
+  }
+}
+.bitva_main .section_gifts .h2_title span {
+  color: #000;
+}
+.bitva_main .section_gifts .gifts {
+  display: grid;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10rem;
+  grid-row-gap: 10rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_gifts .gifts {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+.bitva_main .section_gifts .gifts-it {
+  width: 43.6rem;
+  height: 42.9rem;
+  min-width: 43.6rem;
+  min-height: 42.9rem;
+  background: #000;
+  border-radius: 30px 30px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_gifts .gifts-it {
+    width: 330px;
+    height: 330px;
+    min-width: 330px;
+    min-height: 330px;
+  }
+}
+.bitva_main .section_gifts .gifts-it .img_wr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+.bitva_main .section_gifts .gifts-it .img_wr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main .section_contest {
+  margin-bottom: 17rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest {
+    margin-bottom: 60px;
+  }
+}
+.bitva_main .section_contest .h2_title {
+  margin-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .h2_title {
+    margin-bottom: 30px;
+  }
+}
+.bitva_main .section_contest .contest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest {
+    flex-direction: column;
+  }
+}
+.bitva_main .section_contest .contest-it {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 20rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it {
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+}
+.bitva_main .section_contest .contest-it:last-child {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it:last-child {
+    margin-bottom: 0;
+  }
+}
+.bitva_main .section_contest .contest-it .img_circle {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it .img_circle {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .bitva_main .section_contest .contest-it .img_circle::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+  }
+}
+.bitva_main .section_contest .contest-it .img_circle img {
+  width: 6rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it .img_circle img {
+    width: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it:first-child .img_circle::after {
+    content: "";
+    display: none;
+  }
+}
+.bitva_main .section_contest .contest-it .title {
+  font-family: "Dinpro_bold";
+  font-size: 4rem;
+  line-height: 110%;
+  margin-bottom: 4rem;
+  color: #000;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it .title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #F60C51;
+  }
+}
+.bitva_main .section_contest .contest-it .descr {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  color: #000;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_contest .contest-it .descr {
+    font-size: 20px;
+    max-width: 200px;
+  }
+}
+.bitva_main .form_subscribe {
+  padding: 3.5vw 3.5vw 0 3.5vw;
+  margin-bottom: 17rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe {
+    margin-bottom: 60px;
+    padding: 0 8px;
+  }
+}
+.bitva_main .form_subscribe .content {
+  background: #000;
+  border-radius: 30px;
+  padding: 6rem 4rem;
+  position: relative;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content {
+    max-width: 100%;
+    padding: 30px 20px 300px;
+  }
+}
+.bitva_main .form_subscribe .content .h2_title {
+  color: #fff;
+  text-align: center;
+  width: 55rem;
+  font-size: 4.5rem;
+  margin: 0 auto 7rem;
+  position: inherit;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .h2_title {
+    font-size: 25px;
+    width: auto;
+    margin: 0 auto 30px;
+  }
+}
+.bitva_main .form_subscribe .content .form_wr {
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main .form_subscribe .content .form_wr .form {
+  width: 56rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .form_wr .form {
+    width: 100%;
+  }
+}
+.bitva_main .form_subscribe .content .form_wr .form-input {
+  width: 100%;
+  height: 8rem;
+  border-radius: 6rem;
+  margin-bottom: 1.5rem;
+  background: #000;
+  border: 0.2rem solid #fff;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  padding-left: 4rem;
+  color: #fff;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .form_wr .form-input {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 60px;
+  }
+}
+.bitva_main .form_subscribe .content .form_wr .form-input:focus {
+  outline: none;
+  border: 0.2rem solid #F60C51;
+  transition: 0.3s;
+}
+.bitva_main .form_subscribe .content .form_wr .form-btn {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 9rem;
+  background: #F60C51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  font-family: "Dinpro_medium";
+  font-size: 4rem;
+  line-height: 110%;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .form_wr .form-btn {
+    height: 60px;
+    font-size: 25px;
+    border-radius: 60px;
+  }
+}
+.bitva_main .form_subscribe .content .chars_1 {
+  position: absolute;
+  right: -2%;
+  bottom: 0;
+  height: auto;
+  width: 32%;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .chars_1 {
+    width: 230px;
+    overflow: hidden;
+    border-radius: 60px;
+  }
+}
+.bitva_main .form_subscribe .content .chars_1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .chars_1 img {
+    transform: translateY(30px);
+  }
+}
+.bitva_main .form_subscribe .content .chars_2 {
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
+  height: auto;
+  width: 25%;
+}
+.bitva_main .form_subscribe .content .chars_2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .chars_2 {
+    display: none;
+  }
+}
+.bitva_main .form_subscribe .content .shine {
+  position: absolute;
+  width: auto;
+}
+.bitva_main .form_subscribe .content .shine img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main .form_subscribe .content .shine--1 {
+  left: 25%;
+  top: 15%;
+  height: 10%;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .shine--1 {
+    top: auto;
+    bottom: 230px;
+    height: 40px;
+    left: 30px;
+  }
+}
+.bitva_main .form_subscribe .content .shine--2 {
+  left: 2%;
+  bottom: 15%;
+  height: 6%;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .shine--2 {
+    top: auto;
+    bottom: 40px;
+    height: 30px;
+    left: 20px;
+  }
+}
+.bitva_main .form_subscribe .content .shine--3 {
+  right: 5%;
+  top: 10%;
+  height: 7%;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .shine--3 {
+    top: auto;
+    bottom: 210px;
+    height: 30px;
+    right: 20px;
+  }
+}
+.bitva_main .form_subscribe .content .shine--4 {
+  right: 22%;
+  bottom: 13%;
+  height: 12%;
+}
+@media (max-width: 768px) {
+  .bitva_main .form_subscribe .content .shine--4 {
+    display: none;
+  }
+}
+.bitva_main .section_experts {
+  margin-bottom: 20rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts {
+    margin-bottom: 60px;
+  }
+}
+.bitva_main .section_experts .h2_title {
+  margin-bottom: 9rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .h2_title {
+    margin-bottom: 30px;
+  }
+}
+.bitva_main .section_experts .experts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .experts {
+    flex-direction: column;
+  }
+}
+.bitva_main .section_experts .experts-it {
+  padding: 3.5rem 1rem;
+  height: 43rem;
+  width: 43.5rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3.5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .experts-it {
+    width: 305px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 30px 10px;
+  }
+}
+.bitva_main .section_experts .experts-it:last-child {
+  margin-right: 0;
+}
+.bitva_main .section_experts .experts-it .name {
+  font-family: "Dinpro_medium";
+  font-size: 4rem;
+  line-height: 106%;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .experts-it .name {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+.bitva_main .section_experts .experts-it .img {
+  height: 22rem;
+  width: 22rem;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .experts-it .img {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 15px;
+  }
+}
+.bitva_main .section_experts .experts-it .role {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 130.5%;
+  max-width: 29rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_experts .experts-it .role {
+    font-size: 16px;
+    max-width: 210px;
+  }
+}
+.bitva_main .section_experts .experts-it--pink {
+  background: #F60C51;
+}
+.bitva_main .section_experts .experts-it--black {
+  background: #000;
+}
+.bitva_main .section_slides_slider {
+  margin-bottom: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .bitva_main .section_slides_slider {
+    margin-bottom: 60px;
+    padding: 0 20px;
+  }
+}
+.bitva_main .section_slides_slider .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 170rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .container {
+    max-width: 100%;
+  }
+}
+.bitva_main .section_slides_slider .h2_title {
+  margin: 0 auto 9rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .h2_title {
+    margin-bottom: 30px;
+  }
+}
+.bitva_main .section_slides_slider .last_slides_pos {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .last_slides_pos {
+    margin-bottom: 20px;
+  }
+}
+.bitva_main .section_slides_slider .last_slides_pos-name {
+  font-family: "Dinpro_medium";
+  font-size: 4rem;
+  text-transform: uppercase;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.3rem 6rem;
+  border-radius: 60px;
+  background: #F60C51;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .last_slides_pos-name {
+    display: none;
+  }
+}
+.bitva_main .section_slides_slider .last_slides_pos-date {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  line-height: 130.5%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.3rem 4.5rem;
+  border-radius: 60px;
+  background: #000;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .last_slides_pos-date {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+.bitva_main .section_slides_slider .slides {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .slides {
+    flex-direction: column;
+  }
+}
+.bitva_main .section_slides_slider .slides-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .slides-col {
+    gap: 0;
+  }
+}
+.bitva_main .section_slides_slider .slides-it {
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+@media (max-width: 576px) {
+  .bitva_main .section_slides_slider .slides-it {
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+}
+.bitva_main .section_slides_slider .slides-it .name {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  background: #fff;
+  padding: 0.7rem 2.5rem;
+  border-radius: 60px;
+  bottom: -4rem;
+  transition: 600ms cubic-bezier(0.75, -0.5, 0, 1.75);
+  z-index: 2;
+  border: 0.1rem solid #F4F4F4;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .bitva_main .section_slides_slider .slides-it .name {
+    bottom: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .bitva_main .section_slides_slider .slides-it .name {
+    bottom: 8px;
+    left: 6px;
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}
+.bitva_main .section_slides_slider .slides-it img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+@media (max-width: 576px) {
+  .bitva_main .section_slides_slider .slides-it img {
+    border-radius: 10px;
+  }
+}
+.bitva_main .section_slides_slider .slides-it:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .bitva_main .section_slides_slider .slides-it:hover .name {
+    bottom: 12px;
+    transition: 600ms cubic-bezier(0.75, -0.5, 0, 1.75);
+  }
+}
+.bitva_main .section_slides_slider .slides-it:hover img {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.bitva_main .section_slides_slider .slider_btns {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.bitva_main .section_slides_slider .slider_btns-counter {
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2rem;
+  margin: 0 3.5rem;
+  color: #000;
+}
+@media (max-width: 992px) {
+  .bitva_main .section_slides_slider .slider_btns-counter {
+    margin: 0 15px;
+    font-size: 18px;
+  }
+}
+.bitva_main .section_slides_slider .slider_btns-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+  border: 0.1rem solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+@media (max-width: 992px) {
+  .bitva_main .section_slides_slider .slider_btns-btn {
+    width: 25px;
+    height: 25px;
+  }
+}
+.bitva_main .section_slides_slider .slider_btns-btn img {
+  height: 2rem;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 992px) {
+  .bitva_main .section_slides_slider .slider_btns-btn img {
+    height: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .bitva_main .section_slides_slider .slider_btns-btn:hover {
+    cursor: pointer;
+  }
+}
+.bitva_main .section_slides_slider .slider_btns-btn.swiper-button-lock {
+  display: none;
+}
+
+.bitva_main--step1 .section_stages .stages-rules {
+  max-width: 150rem;
+  margin: 3rem auto 0;
+  width: 100%;
+  background: #000;
+  border-radius: 7rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dinpro_medium";
+  font-size: 6.5rem;
+  color: #fff;
+  line-height: 106%;
+  text-transform: uppercase;
+}
+.bitva_main--step1 .section_stages .stages-rules:hover {
+  cursor: pointer;
+}
+.bitva_main--step1 .section_stages .stages {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bitva_main--step1 .section_stages .stages-it {
+  padding: 5rem 6rem;
+  border-radius: 3rem;
+  border: 0.4rem solid #F60C51;
+  margin-right: 0;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child {
+  background: #F60C51;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child .img_circle {
+  background: #fff;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child .img_circle svg path {
+  stroke: #000;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child .title {
+  color: #fff;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child .date {
+  color: #fff;
+}
+.bitva_main--step1 .section_stages .stages-it:first-child .descr {
+  color: #fff;
+}
+.bitva_main--step1 .form_step1 {
+  padding: 3.5vw 3.5vw 0 3.5vw;
+  margin-bottom: 17rem;
+}
+.bitva_main--step1 .form_step1 .content {
+  background: #F60C51;
+  border-radius: 30px;
+  padding: 6rem 4rem;
+  padding-left: 10rem;
+  position: relative;
+  max-width: 150rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bitva_main--step1 .form_step1 .content .h2_title {
+  color: #fff;
+  text-align: center;
+  font-size: 8rem;
+  white-space: nowrap;
+  margin: 0 auto 7rem;
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step1 .form_step1 .content .form_wr {
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form {
+  width: 75rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form-input {
+  width: 100%;
+  height: 8rem;
+  border-radius: 6rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 0.2rem solid #fff;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  padding-left: 4rem;
+  color: #000;
+  transition: 0.3s;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form-input:focus {
+  outline: none;
+  border: 0.2rem solid #000;
+  transition: 0.3s;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form_btn_wr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form_btn_wr .form-add_slide {
+  width: 100%;
+  height: 9rem;
+  padding: 0 3rem 0 5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  position: relative;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #F60C51;
+  text-transform: uppercase;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form_btn_wr .form-add_slide-plus {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.bitva_main--step1 .form_step1 .content .form_wr .form_btn_wr .form-btn {
+  margin-top: 0;
+  width: 100%;
+  height: 9rem;
+  width: 45%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bitva_main--step1 .form_step1 .content .chars_1 {
+  position: absolute;
+  right: -1%;
+  bottom: -1%;
+  height: auto;
+  width: 100%;
+}
+.bitva_main--step1 .form_step1 .content .chars_1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step1 .form_step1 .content .shine {
+  position: absolute;
+  width: auto;
+}
+.bitva_main--step1 .form_step1 .content .shine img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step1 .form_step1 .content .shine--1 {
+  left: 25%;
+  top: 15%;
+  height: 10%;
+}
+.bitva_main--step1 .form_step1 .content .shine--2 {
+  left: 2%;
+  bottom: 15%;
+  height: 6%;
+}
+.bitva_main--step1 .form_step1 .content .shine--3 {
+  right: 5%;
+  top: 10%;
+  height: 7%;
+}
+.bitva_main--step1 .form_step1 .content .shine--4 {
+  right: 22%;
+  bottom: 13%;
+  height: 12%;
+}
+
+.bitva_main--step2 .section_stages .stages-rules {
+  max-width: 150rem;
+  margin: 3rem auto 0;
+  width: 100%;
+  background: #000;
+  border-radius: 7rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dinpro_medium";
+  font-size: 6.5rem;
+  color: #fff;
+  line-height: 106%;
+  text-transform: uppercase;
+}
+.bitva_main--step2 .section_stages .stages-rules:hover {
+  cursor: pointer;
+}
+.bitva_main--step2 .section_stages .stages {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bitva_main--step2 .section_stages .stages-it {
+  padding: 5rem 6rem;
+  border-radius: 3rem;
+  border: 0.4rem solid #F60C51;
+  margin-right: 0;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) {
+  background: #F60C51;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) .img_circle {
+  background: #fff;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) .img_circle svg path {
+  stroke: #000;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) .title {
+  color: #fff;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) .date {
+  color: #fff;
+}
+.bitva_main--step2 .section_stages .stages-it:nth-child(2) .descr {
+  color: #fff;
+}
+.bitva_main--step2 .form_step2 {
+  padding: 3.5vw 3.5vw 0 3.5vw;
+  margin-bottom: 17rem;
+}
+.bitva_main--step2 .form_step2 .content {
+  background: #F60C51;
+  border-radius: 30px;
+  padding: 6rem 4rem;
+  padding-left: 10rem;
+  position: relative;
+  max-width: 150rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bitva_main--step2 .form_step2 .content .h2_title {
+  color: #fff;
+  text-align: center;
+  font-size: 6.5rem;
+  width: 60%;
+  text-align: left;
+  margin: 0 0 7rem;
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step2 .form_step2 .content .form_wr {
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form {
+  width: 75rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form-input {
+  width: 100%;
+  height: 8rem;
+  border-radius: 6rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 0.2rem solid #fff;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  padding-left: 4rem;
+  color: #000;
+  transition: 0.3s;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form-input:focus {
+  outline: none;
+  border: 0.2rem solid #000;
+  transition: 0.3s;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form_btn_wr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form_btn_wr .form-add_slide {
+  width: 100%;
+  height: 9rem;
+  padding: 0 3rem 0 5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  position: relative;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #F60C51;
+  text-transform: uppercase;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form_btn_wr .form-add_slide-plus {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.bitva_main--step2 .form_step2 .content .form_wr .form_btn_wr .form-btn {
+  margin-top: 0;
+  width: 100%;
+  height: 9rem;
+  width: 45%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bitva_main--step2 .form_step2 .content .chars_1 {
+  position: absolute;
+  right: -1%;
+  bottom: -1%;
+  height: auto;
+  width: 100%;
+}
+.bitva_main--step2 .form_step2 .content .chars_1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step2 .form_step2 .content .shine {
+  position: absolute;
+  width: auto;
+}
+.bitva_main--step2 .form_step2 .content .shine img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step2 .form_step2 .content .shine--1 {
+  left: 25%;
+  top: 15%;
+  height: 10%;
+}
+.bitva_main--step2 .form_step2 .content .shine--2 {
+  left: 2%;
+  bottom: 15%;
+  height: 6%;
+}
+.bitva_main--step2 .form_step2 .content .shine--3 {
+  right: 5%;
+  top: 10%;
+  height: 7%;
+}
+.bitva_main--step2 .form_step2 .content .shine--4 {
+  right: 22%;
+  bottom: 13%;
+  height: 12%;
+}
+.bitva_main--step2 .section_slides_grid {
+  bottom: #000;
+  padding: 0 3.5vw;
+  margin-bottom: 16rem;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 6rem;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it {
+  width: 100%;
+  height: 100%;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .img_wr {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .img_wr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  color: #000;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf .like_wr {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf .like_wr .like_count {
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 130.5%;
+  height: 3rem;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf .like_wr .like_heart {
+  width: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf .like_wr--liked {
+  color: #F60C51;
+}
+.bitva_main--step2 .section_slides_grid .slides_grid-it .inf .like_wr--liked .like_heart path {
+  stroke: #F60C51;
+  fill: #F60C51;
+}
+
+.bitva_main--step3 .section_stages .stages-rules {
+  max-width: 150rem;
+  margin: 3rem auto 0;
+  width: 100%;
+  background: #000;
+  border-radius: 7rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dinpro_medium";
+  font-size: 6.5rem;
+  color: #fff;
+  line-height: 106%;
+  text-transform: uppercase;
+}
+.bitva_main--step3 .section_stages .stages-rules:hover {
+  cursor: pointer;
+}
+.bitva_main--step3 .section_stages .stages {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bitva_main--step3 .section_stages .stages-it {
+  padding: 5rem 6rem;
+  border-radius: 3rem;
+  border: 0.4rem solid #F60C51;
+  margin-right: 0;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) {
+  background: #F60C51;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) .img_circle {
+  background: #fff;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) .img_circle svg path {
+  stroke: #000;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) .title {
+  color: #fff;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) .date {
+  color: #fff;
+}
+.bitva_main--step3 .section_stages .stages-it:nth-child(3) .descr {
+  color: #fff;
+}
+.bitva_main--step3 .form_step2 {
+  padding: 3.5vw 3.5vw 0 3.5vw;
+  margin-bottom: 17rem;
+}
+.bitva_main--step3 .form_step2 .content {
+  background: #F60C51;
+  border-radius: 30px;
+  padding: 6rem 4rem;
+  padding-left: 10rem;
+  position: relative;
+  max-width: 150rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bitva_main--step3 .form_step2 .content .h2_title {
+  color: #fff;
+  text-align: center;
+  font-size: 6.5rem;
+  width: 60%;
+  text-align: left;
+  margin: 0 0 7rem;
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step3 .form_step2 .content .form_wr {
+  position: inherit;
+  z-index: 2;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form {
+  width: 75rem;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form-input {
+  width: 100%;
+  height: 8rem;
+  border-radius: 6rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border: 0.2rem solid #fff;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  padding-left: 4rem;
+  color: #000;
+  transition: 0.3s;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form-input:focus {
+  outline: none;
+  border: 0.2rem solid #000;
+  transition: 0.3s;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form_btn_wr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form_btn_wr .form-add_slide {
+  width: 100%;
+  height: 9rem;
+  padding: 0 3rem 0 5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  position: relative;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #F60C51;
+  text-transform: uppercase;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form_btn_wr .form-add_slide-plus {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.bitva_main--step3 .form_step2 .content .form_wr .form_btn_wr .form-btn {
+  margin-top: 0;
+  width: 100%;
+  height: 9rem;
+  width: 45%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6rem;
+  border: none;
+  outline: none;
+  font-family: "Dinpro_medium";
+  font-size: 3.5rem;
+  line-height: 110%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bitva_main--step3 .form_step2 .content .chars_1 {
+  position: absolute;
+  right: -1%;
+  bottom: -1%;
+  height: auto;
+  width: 100%;
+}
+.bitva_main--step3 .form_step2 .content .chars_1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step3 .form_step2 .content .shine {
+  position: absolute;
+  width: auto;
+}
+.bitva_main--step3 .form_step2 .content .shine img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.bitva_main--step3 .form_step2 .content .shine--1 {
+  left: 25%;
+  top: 15%;
+  height: 10%;
+}
+.bitva_main--step3 .form_step2 .content .shine--2 {
+  left: 2%;
+  bottom: 15%;
+  height: 6%;
+}
+.bitva_main--step3 .form_step2 .content .shine--3 {
+  right: 5%;
+  top: 10%;
+  height: 7%;
+}
+.bitva_main--step3 .form_step2 .content .shine--4 {
+  right: 22%;
+  bottom: 13%;
+  height: 12%;
+}
+.bitva_main--step3 .section_slides_grid {
+  bottom: #000;
+  padding: 0 3.5vw;
+  margin-bottom: 16rem;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 6rem;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it {
+  width: 100%;
+  height: 100%;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .img_wr {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .img_wr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "PFDin_regular";
+  color: #fff;
+  font-size: 24px;
+  line-height: 130.5%;
+  font-size: 2.4rem;
+  color: #000;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf .like_wr {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf .like_wr .like_count {
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 130.5%;
+  height: 3rem;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf .like_wr .like_heart {
+  width: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf .like_wr--liked {
+  color: #F60C51;
+}
+.bitva_main--step3 .section_slides_grid .slides_grid-it .inf .like_wr--liked .like_heart path {
+  stroke: #F60C51;
+  fill: #F60C51;
+}
