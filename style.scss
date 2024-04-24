@@ -173,8 +173,11 @@ h1, h2 {
                     height: 100%;
                     object-fit: contain;
                     @media  (max-width: $breakpoint-md-min) {
-                        display: none;
+                        // display: none;
                     }
+                }
+                &--1  {
+                    
                 }
             }
 
@@ -194,6 +197,7 @@ h1, h2 {
                 display: none;
                 @media  (max-width: $breakpoint-md-min) {
                     display: block;
+                    display: none;
                 }
             }
         }

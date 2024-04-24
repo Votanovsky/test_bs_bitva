@@ -117,11 +117,6 @@ h1, h2 {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 768px) {
-  .bitva_main .section_promo .promo_wr_img .img_parralax .img_desctop {
-    display: none;
-  }
-}
 .bitva_main .section_promo .promo_wr_img .name {
   position: absolute;
   font-size: 60px;
@@ -140,6 +135,7 @@ h1, h2 {
 @media (max-width: 768px) {
   .bitva_main .section_promo .promo_wr_img .img_mob {
     display: block;
+    display: none;
   }
 }
 .bitva_main .section_promo .step_name {
